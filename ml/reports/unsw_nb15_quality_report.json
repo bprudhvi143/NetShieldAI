@@ -1,0 +1,87 @@
+{
+    "dataset_name": "UNSW_NB15",
+    "creation_timestamp": "2026-08-16T23:24:15.799679",
+    "overview": {
+        "num_raw_files": 4,
+        "raw_total_rows": 2540047,
+        "raw_total_columns": 49,
+        "processed_row_count": 4985,
+        "processed_feature_count": 79
+    },
+    "quality": {
+        "missing_values_before_imputation": {},
+        "infinite_values_converted": {},
+        "duplicates_removed_count": 15,
+        "constant_columns_found": [],
+        "invalid_values_found": 0
+    },
+    "labels": {
+        "label_column": "Label / attack_cat",
+        "normal_count": 4324,
+        "attack_count": 661,
+        "attack_percentage": 13.26,
+        "num_attack_classes": 10,
+        "samples_per_class": {
+            "Normal": 4324,
+            "Generic": 444,
+            "Exploits": 87,
+            "Fuzzers": 52,
+            "Reconnaissance": 30,
+            "DoS": 29,
+            "Analysis": 8,
+            "Shellcode": 5,
+            "Backdoor": 3,
+            "Worms": 2,
+            "Backdoors": 1
+        }
+    },
+    "exclusions": [
+        {
+            "field_name": "srcip",
+            "reason": "Excluded from baseline features due to potential dataset-specific target leakage, memorization risk, or poor generalization to unseen network environments.",
+            "is_target_related": false,
+            "is_metadata": true,
+            "is_leakage": true
+        },
+        {
+            "field_name": "dstip",
+            "reason": "Excluded from baseline features due to potential dataset-specific target leakage, memorization risk, or poor generalization to unseen network environments.",
+            "is_target_related": false,
+            "is_metadata": true,
+            "is_leakage": true
+        },
+        {
+            "field_name": "Stime",
+            "reason": "Excluded from baseline features due to potential dataset-specific target leakage, memorization risk, or poor generalization to unseen network environments.",
+            "is_target_related": false,
+            "is_metadata": true,
+            "is_leakage": true
+        },
+        {
+            "field_name": "Ltime",
+            "reason": "Excluded from baseline features due to potential dataset-specific target leakage, memorization risk, or poor generalization to unseen network environments.",
+            "is_target_related": false,
+            "is_metadata": true,
+            "is_leakage": true
+        },
+        {
+            "field_name": "attack_cat",
+            "reason": "Supervised multiclass target column.",
+            "is_target_related": true,
+            "is_metadata": false,
+            "is_leakage": true
+        },
+        {
+            "field_name": "Label",
+            "reason": "Supervised binary target column.",
+            "is_target_related": true,
+            "is_metadata": false,
+            "is_leakage": true
+        }
+    ],
+    "split": {
+        "train_count": 3489,
+        "validation_count": 748,
+        "test_count": 748
+    }
+}

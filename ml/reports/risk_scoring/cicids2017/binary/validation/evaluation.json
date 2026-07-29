@@ -1,0 +1,51 @@
+{
+    "creation_timestamp": "2026-08-17T20:33:41.532034",
+    "overview": {
+        "dataset": "CICIDS2017",
+        "task_type": "binary",
+        "split": "VALIDATION",
+        "total_samples": 741,
+        "normal_samples": 597,
+        "attack_samples": 144
+    },
+    "score_statistics": {
+        "all": {
+            "min": 0.05,
+            "max": 75.26,
+            "mean": 15.019568151147098,
+            "median": 2.43
+        },
+        "normal": {
+            "min": 0.05,
+            "max": 19.41,
+            "mean": 3.0733333333333333,
+            "median": 1.33
+        },
+        "attack": {
+            "min": 10.96,
+            "max": 75.26,
+            "mean": 64.54666666666668,
+            "median": 61.855000000000004
+        }
+    },
+    "risk_level_distribution": {
+        "normal": {
+            "Low": 597,
+            "Medium": 0,
+            "High": 0,
+            "Critical": 0
+        },
+        "attack": {
+            "Low": 1,
+            "Medium": 28,
+            "High": 115,
+            "Critical": 0
+        }
+    },
+    "calibration_metrics": {
+        "attack_high_critical_coverage_rate": 0.7986111111111112,
+        "normal_high_critical_false_rate": 0.0,
+        "mean_score_separation": 61.47333333333335,
+        "median_score_separation": 60.525000000000006
+    }
+}

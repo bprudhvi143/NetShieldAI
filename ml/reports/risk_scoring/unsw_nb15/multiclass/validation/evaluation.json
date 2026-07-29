@@ -1,0 +1,51 @@
+{
+    "creation_timestamp": "2026-08-17T20:33:49.530053",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "task_type": "multiclass",
+        "split": "VALIDATION",
+        "total_samples": 748,
+        "normal_samples": 649,
+        "attack_samples": 99
+    },
+    "score_statistics": {
+        "all": {
+            "min": 0.12,
+            "max": 89.71,
+            "mean": 13.713382352941178,
+            "median": 4.135
+        },
+        "normal": {
+            "min": 0.12,
+            "max": 85.83,
+            "mean": 5.090770416024653,
+            "median": 3.24
+        },
+        "attack": {
+            "min": 14.38,
+            "max": 89.71,
+            "mean": 70.23939393939393,
+            "median": 71.09
+        }
+    },
+    "risk_level_distribution": {
+        "normal": {
+            "Low": 641,
+            "Medium": 1,
+            "High": 6,
+            "Critical": 1
+        },
+        "attack": {
+            "Low": 4,
+            "Medium": 4,
+            "High": 88,
+            "Critical": 3
+        }
+    },
+    "calibration_metrics": {
+        "attack_high_critical_coverage_rate": 0.9191919191919192,
+        "normal_high_critical_false_rate": 0.01078582434514638,
+        "mean_score_separation": 65.14862352336928,
+        "median_score_separation": 67.85000000000001
+    }
+}

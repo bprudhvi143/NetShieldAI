@@ -1,0 +1,85 @@
+{
+    "config_version": "1.0",
+    "weights": {
+        "intrusion_probability_weight": 0.40,
+        "anomaly_weight": 0.20,
+        "severity_weight": 0.20,
+        "impact_weight": 0.20
+    },
+    "risk_thresholds": {
+        "low": [0.0, 30.0],
+        "medium": [30.0, 60.0],
+        "high": [60.0, 85.0],
+        "critical": [85.0, 100.0]
+    },
+    "severity_mapping": {
+        "cicids2017": {
+            "BENIGN": "Not Applicable",
+            "Normal": "Not Applicable",
+            "Bot": "High",
+            "DDoS": "Critical",
+            "DoS GoldenEye": "High",
+            "DoS Hulk": "High",
+            "DoS Slowhttptest": "High",
+            "DoS slowloris": "High",
+            "FTP-Patator": "Medium",
+            "PortScan": "Medium",
+            "SSH-Patator": "High",
+            "Web Attack \u00ef\u00bf\u00bd Brute Force": "High",
+            "Web Attack \u00ef\u00bf\u00bd XSS": "High",
+            "Web Attack \u00e2\u0080\u0093 Brute Force": "High",
+            "Web Attack \u00e2\u0080\u0093 XSS": "High"
+        },
+        "unsw_nb15": {
+            "Normal": "Not Applicable",
+            "Analysis": "Low",
+            "Backdoor": "High",
+            "Backdoors": "High",
+            "DoS": "High",
+            "Exploits": "High",
+            "Fuzzers": "Medium",
+            "Generic": "Medium",
+            "Reconnaissance": "Medium",
+            "Shellcode": "High",
+            "Worms": "Critical"
+        },
+        "binary": {
+            "Normal": "Not Applicable",
+            "Attack": "High"
+        },
+        "fallback": "Medium"
+    },
+    "severity_scores": {
+        "Not Applicable": 0.0,
+        "Low": 20.0,
+        "Medium": 50.0,
+        "High": 80.0,
+        "Critical": 100.0
+    },
+    "priority_rules": {
+        "Critical": {
+            "Critical": "P1",
+            "High": "P1",
+            "Medium": "P2",
+            "Low": "P2"
+        },
+        "High": {
+            "Critical": "P1",
+            "High": "P2",
+            "Medium": "P2",
+            "Low": "P3"
+        },
+        "Medium": {
+            "Critical": "P2",
+            "High": "P3",
+            "Medium": "P3",
+            "Low": "P4"
+        },
+        "Low": {
+            "Critical": "P3",
+            "High": "P4",
+            "Medium": "P4",
+            "Low": "P4"
+        }
+    }
+}

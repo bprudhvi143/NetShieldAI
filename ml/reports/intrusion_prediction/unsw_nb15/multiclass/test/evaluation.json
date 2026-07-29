@@ -1,0 +1,65 @@
+{
+    "creation_timestamp": "2026-08-16T23:51:53.668004",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "task_type": "multiclass",
+        "split": "TEST",
+        "pipeline_version": "1.0",
+        "total_samples": 748,
+        "feature_count": 79
+    },
+    "metrics": {
+        "accuracy": 0.9812834224598931,
+        "macro_precision": 0.6492182653586936,
+        "macro_recall": 0.7035520667909216,
+        "macro_f1": 0.6723593176151811,
+        "weighted_precision": 0.9832168430109152,
+        "weighted_recall": 0.9812834224598931,
+        "weighted_f1": 0.9820292594581246,
+        "attack_classification_accuracy": 0.898989898989899
+    },
+    "per_class": {
+        "Analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "DoS": {
+            "precision": 0.7142857142857143,
+            "recall": 0.7142857142857143,
+            "f1_score": 0.7142857142857143,
+            "support": 7
+        },
+        "Exploits": {
+            "precision": 0.7857142857142857,
+            "recall": 0.8461538461538461,
+            "f1_score": 0.8148148148148148,
+            "support": 13
+        },
+        "Fuzzers": {
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1_score": 0.36363636363636365,
+            "support": 5
+        },
+        "Generic": {
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "f1_score": 0.9850746268656716,
+            "support": 68
+        },
+        "Normal": {
+            "precision": 0.9969088098918083,
+            "recall": 0.9938366718027735,
+            "f1_score": 0.9953703703703703,
+            "support": 649
+        },
+        "Reconnaissance": {
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1_score": 0.8333333333333334,
+            "support": 5
+        }
+    }
+}

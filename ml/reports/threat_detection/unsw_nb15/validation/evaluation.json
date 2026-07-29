@@ -1,0 +1,86 @@
+{
+    "creation_timestamp": "2026-08-17T22:42:57.329493",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "split": "VALIDATION",
+        "total_samples": 748,
+        "normal_samples": 649,
+        "attack_samples": 99,
+        "pipeline_version": "1.0"
+    },
+    "performance": {
+        "latency_ms_per_flow": 0.22757606955001103,
+        "throughput_flows_per_sec": 4394.135121400561
+    },
+    "detection_status_counts": {
+        "Normal": 604,
+        "Suspicious": 40,
+        "Pipeline_Attack_Status_Count": 104
+    },
+    "anomaly_metrics": {
+        "overall_anomaly_rate": 0.18983957219251338,
+        "normal_false_anomaly_rate": 0.06779661016949153,
+        "attack_anomaly_detection_rate": 0.98989898989899,
+        "normal_anomaly_count": 44,
+        "attack_anomaly_count": 98
+    },
+    "supervised_binary_metrics": {
+        "accuracy": 0.982620320855615,
+        "precision": 0.9134615384615384,
+        "recall": 0.9595959595959596,
+        "f1_score": 0.9359605911330049,
+        "false_positive_rate": 0.01386748844375963,
+        "confusion_matrix": {
+            "TP": 95,
+            "TN": 640,
+            "FP": 9,
+            "FN": 4
+        }
+    },
+    "supervised_multiclass_metrics": {
+        "standalone_multiclass_model_accuracy": 0.9612299465240641,
+        "standalone_multiclass_model_macro_f1": 0.48862940385830955,
+        "pipeline_gated_multiclass_accuracy": 0.9598930481283422,
+        "pipeline_gated_multiclass_macro_f1": 0.4818337668649314,
+        "true_attack_classification_accuracy": 0.7676767676767676,
+        "pipeline_multiclass_invocations": 104,
+        "classification_status": {
+            "performed": 104,
+            "not_run": 644
+        }
+    },
+    "risk_metrics": {
+        "threat_score": {
+            "all_mean": 13.662566844919784,
+            "all_median": 4.135,
+            "normal_mean": 5.0856240369799695,
+            "normal_median": 3.25,
+            "attack_mean": 69.88919191919192,
+            "attack_median": 71.09
+        },
+        "risk_level_distribution": {
+            "normal": {
+                "Low": 641,
+                "Medium": 1,
+                "High": 6,
+                "Critical": 1
+            },
+            "attack": {
+                "Low": 5,
+                "Medium": 3,
+                "High": 88,
+                "Critical": 3
+            }
+        },
+        "coverage_and_false_alarms": {
+            "attack_high_critical_coverage_rate": 0.9191919191919192,
+            "normal_high_critical_false_rate": 0.01078582434514638
+        }
+    },
+    "signal_consistency": {
+        "normal": 604,
+        "anomaly_only": 40,
+        "intrusion_only": 2,
+        "confirmed_attack": 102
+    }
+}

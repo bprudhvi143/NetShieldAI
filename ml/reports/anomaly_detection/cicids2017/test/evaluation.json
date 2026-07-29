@@ -1,0 +1,51 @@
+{
+    "creation_timestamp": "2026-08-16T23:33:21.768376",
+    "overview": {
+        "dataset": "CICIDS2017",
+        "split": "TEST",
+        "pipeline_version": "1.0",
+        "total_samples": 741,
+        "normal_samples": 597,
+        "attack_samples": 144,
+        "feature_count": 77
+    },
+    "confusion_matrix": {
+        "TP": 41,
+        "TN": 541,
+        "FP": 56,
+        "FN": 103
+    },
+    "metrics": {
+        "accuracy": 0.7854251012145749,
+        "precision": 0.422680412371134,
+        "recall_detection_rate": 0.2847222222222222,
+        "f1_score": 0.34024896265560167,
+        "true_positive_rate": 0.2847222222222222,
+        "false_positive_rate": 0.09380234505862646,
+        "true_negative_rate_specificity": 0.9061976549413735,
+        "false_negative_rate": 0.7152777777777778
+    },
+    "metric_warnings": {
+        "precision_zero_denominator": false,
+        "recall_zero_denominator": false,
+        "fpr_zero_denominator": false,
+        "tnr_zero_denominator": false,
+        "fnr_zero_denominator": false
+    },
+    "normal_score_statistics": {
+        "count": 597,
+        "min": -0.2307071172131967,
+        "max": 0.18577685743954547,
+        "mean": 0.12589646599712243,
+        "median": 0.15829032297552004,
+        "std": 0.0793464032195631
+    },
+    "attack_score_statistics": {
+        "count": 144,
+        "min": -0.17316119426752863,
+        "max": 0.17278313428751507,
+        "mean": 0.08099126917492719,
+        "median": 0.14114928804306692,
+        "std": 0.10982435253031353
+    }
+}

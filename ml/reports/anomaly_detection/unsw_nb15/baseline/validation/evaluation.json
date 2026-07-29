@@ -1,0 +1,51 @@
+{
+    "creation_timestamp": "2026-08-16T23:33:22.023230",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "split": "VALIDATION",
+        "pipeline_version": "1.0",
+        "total_samples": 748,
+        "normal_samples": 649,
+        "attack_samples": 99,
+        "feature_count": 79
+    },
+    "confusion_matrix": {
+        "TP": 98,
+        "TN": 605,
+        "FP": 44,
+        "FN": 1
+    },
+    "metrics": {
+        "accuracy": 0.9398395721925134,
+        "precision": 0.6901408450704225,
+        "recall_detection_rate": 0.98989898989899,
+        "f1_score": 0.8132780082987551,
+        "true_positive_rate": 0.98989898989899,
+        "false_positive_rate": 0.06779661016949153,
+        "true_negative_rate_specificity": 0.9322033898305084,
+        "false_negative_rate": 0.010101010101010102
+    },
+    "metric_warnings": {
+        "precision_zero_denominator": false,
+        "recall_zero_denominator": false,
+        "fpr_zero_denominator": false,
+        "tnr_zero_denominator": false,
+        "fnr_zero_denominator": false
+    },
+    "normal_score_statistics": {
+        "count": 649,
+        "min": -0.1071715985175653,
+        "max": 0.15258966653015898,
+        "mean": 0.08681937684291938,
+        "median": 0.10432190141076081,
+        "std": 0.051060503463259695
+    },
+    "attack_score_statistics": {
+        "count": 99,
+        "min": -0.14199008523148204,
+        "max": 0.005274025064841148,
+        "mean": -0.04539329519409753,
+        "median": -0.03522483798175091,
+        "std": 0.026521871961191823
+    }
+}

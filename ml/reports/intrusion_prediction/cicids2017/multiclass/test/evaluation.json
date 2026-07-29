@@ -1,0 +1,89 @@
+{
+    "creation_timestamp": "2026-08-16T23:51:51.741763",
+    "overview": {
+        "dataset": "CICIDS2017",
+        "task_type": "multiclass",
+        "split": "TEST",
+        "pipeline_version": "1.0",
+        "total_samples": 741,
+        "feature_count": 77
+    },
+    "metrics": {
+        "accuracy": 0.9932523616734144,
+        "macro_precision": 0.7669027523698179,
+        "macro_recall": 0.8163098669943238,
+        "macro_f1": 0.7839866346710914,
+        "weighted_precision": 0.991286745291322,
+        "weighted_recall": 0.9932523616734145,
+        "weighted_f1": 0.992142750037487,
+        "attack_classification_accuracy": 0.9791666666666666
+    },
+    "per_class": {
+        "BENIGN": {
+            "precision": 0.9966499162479062,
+            "recall": 0.9966499162479062,
+            "f1_score": 0.9966499162479062,
+            "support": 597
+        },
+        "Bot": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1
+        },
+        "DDoS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 55
+        },
+        "DoS GoldenEye": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "DoS Hulk": {
+            "precision": 0.9565217391304348,
+            "recall": 1.0,
+            "f1_score": 0.9777777777777777,
+            "support": 22
+        },
+        "DoS Slowhttptest": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1
+        },
+        "FTP-Patator": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 2
+        },
+        "PortScan": {
+            "precision": 0.9827586206896551,
+            "recall": 0.9827586206896551,
+            "f1_score": 0.9827586206896551,
+            "support": 58
+        },
+        "SSH-Patator": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 2
+        },
+        "Web Attack \u00ef\u00bf\u00bd Brute Force": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1_score": 0.6666666666666666,
+            "support": 1
+        },
+        "Web Attack \u00ef\u00bf\u00bd XSS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        }
+    }
+}

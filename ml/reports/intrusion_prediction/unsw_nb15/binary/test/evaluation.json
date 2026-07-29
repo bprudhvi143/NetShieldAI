@@ -1,0 +1,34 @@
+{
+    "creation_timestamp": "2026-08-16T23:51:52.688561",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "task_type": "binary",
+        "split": "TEST",
+        "pipeline_version": "1.0",
+        "total_samples": 748,
+        "feature_count": 79
+    },
+    "confusion_matrix": {
+        "TP": 97,
+        "TN": 642,
+        "FP": 7,
+        "FN": 2
+    },
+    "metrics": {
+        "accuracy": 0.9879679144385026,
+        "precision": 0.9326923076923077,
+        "recall_detection_rate": 0.9797979797979798,
+        "f1_score": 0.9556650246305419,
+        "true_positive_rate": 0.9797979797979798,
+        "false_positive_rate": 0.01078582434514638,
+        "true_negative_rate_specificity": 0.9892141756548536,
+        "false_negative_rate": 0.020202020202020204
+    },
+    "metric_warnings": {
+        "precision_zero_denominator": false,
+        "recall_zero_denominator": false,
+        "fpr_zero_denominator": false,
+        "tnr_zero_denominator": false,
+        "fnr_zero_denominator": false
+    }
+}

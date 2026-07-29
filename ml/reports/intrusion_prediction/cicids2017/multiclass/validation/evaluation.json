@@ -1,0 +1,77 @@
+{
+    "creation_timestamp": "2026-08-16T23:51:51.242256",
+    "overview": {
+        "dataset": "CICIDS2017",
+        "task_type": "multiclass",
+        "split": "VALIDATION",
+        "pipeline_version": "1.0",
+        "total_samples": 741,
+        "feature_count": 77
+    },
+    "metrics": {
+        "accuracy": 0.9973009446693657,
+        "macro_precision": 0.666480862133036,
+        "macro_recall": 0.6666666666666666,
+        "macro_f1": 0.6665736866573686,
+        "weighted_precision": 0.9959536737392749,
+        "weighted_recall": 0.9973009446693658,
+        "weighted_f1": 0.9966267454926342,
+        "attack_classification_accuracy": 0.9861111111111112
+    },
+    "per_class": {
+        "BENIGN": {
+            "precision": 0.9983277591973244,
+            "recall": 1.0,
+            "f1_score": 0.999163179916318,
+            "support": 597
+        },
+        "DDoS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 58
+        },
+        "DoS GoldenEye": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 2
+        },
+        "DoS Hulk": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 26
+        },
+        "FTP-Patator": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1
+        },
+        "PortScan": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 55
+        },
+        "SSH-Patator": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "Web Attack \u00ef\u00bf\u00bd Brute Force": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "Web Attack \u00ef\u00bf\u00bd XSS": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 0
+        }
+    }
+}

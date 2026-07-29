@@ -1,0 +1,63 @@
+{
+    "dataset_name": "CICIDS2017",
+    "creation_timestamp": "2026-08-16T23:24:04.238176",
+    "overview": {
+        "num_raw_files": 8,
+        "raw_total_rows": 2830743,
+        "raw_total_columns": 79,
+        "processed_row_count": 4939,
+        "processed_feature_count": 77
+    },
+    "quality": {
+        "missing_values_before_imputation": {
+            "Flow Bytes/s": 4,
+            "Flow Packets/s": 4
+        },
+        "infinite_values_converted": {},
+        "duplicates_removed_count": 61,
+        "constant_columns_found": [],
+        "invalid_values_found": 0
+    },
+    "labels": {
+        "label_column": "Label",
+        "normal_count": 3978,
+        "attack_count": 961,
+        "attack_percentage": 19.46,
+        "num_attack_classes": 11,
+        "samples_per_class": {
+            "BENIGN": 3978,
+            "PortScan": 365,
+            "DDoS": 358,
+            "DoS Hulk": 182,
+            "DoS GoldenEye": 13,
+            "FTP-Patator": 12,
+            "Bot": 8,
+            "Web Attack \u00ef\u00bf\u00bd Brute Force": 7,
+            "SSH-Patator": 6,
+            "DoS Slowhttptest": 4,
+            "Web Attack \u00ef\u00bf\u00bd XSS": 3,
+            "DoS slowloris": 3
+        }
+    },
+    "exclusions": [
+        {
+            "field_name": "Fwd Header Length.1",
+            "reason": "Duplicate column of Fwd Header Length.",
+            "is_target_related": false,
+            "is_metadata": false,
+            "is_leakage": false
+        },
+        {
+            "field_name": "Label",
+            "reason": "Target label column",
+            "is_target_related": true,
+            "is_metadata": false,
+            "is_leakage": true
+        }
+    ],
+    "split": {
+        "train_count": 3457,
+        "validation_count": 741,
+        "test_count": 741
+    }
+}

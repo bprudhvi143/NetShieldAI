@@ -1,0 +1,83 @@
+{
+    "creation_timestamp": "2026-08-16T23:51:53.052273",
+    "overview": {
+        "dataset": "UNSW_NB15",
+        "task_type": "multiclass",
+        "split": "VALIDATION",
+        "pipeline_version": "1.0",
+        "total_samples": 748,
+        "feature_count": 79
+    },
+    "metrics": {
+        "accuracy": 0.9612299465240641,
+        "macro_precision": 0.47879934879934877,
+        "macro_recall": 0.5063961650402329,
+        "macro_f1": 0.48862940385830955,
+        "weighted_precision": 0.9621644151055915,
+        "weighted_recall": 0.9612299465240642,
+        "weighted_f1": 0.9612894833358586,
+        "attack_classification_accuracy": 0.7777777777777778
+    },
+    "per_class": {
+        "Analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "Backdoor": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        },
+        "DoS": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1_score": 0.18181818181818182,
+            "support": 7
+        },
+        "Exploits": {
+            "precision": 0.2857142857142857,
+            "recall": 0.36363636363636365,
+            "f1_score": 0.32,
+            "support": 11
+        },
+        "Fuzzers": {
+            "precision": 0.46153846153846156,
+            "recall": 0.6,
+            "f1_score": 0.5217391304347826,
+            "support": 10
+        },
+        "Generic": {
+            "precision": 1.0,
+            "recall": 0.9682539682539683,
+            "f1_score": 0.9838709677419355,
+            "support": 63
+        },
+        "Normal": {
+            "precision": 0.9907407407407407,
+            "recall": 0.9892141756548536,
+            "f1_score": 0.9899768696993061,
+            "support": 649
+        },
+        "Reconnaissance": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1_score": 0.8888888888888888,
+            "support": 4
+        },
+        "Shellcode": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "support": 1
+        },
+        "Worms": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 1
+        }
+    }
+}

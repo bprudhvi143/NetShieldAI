@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Databases & local stores
+mongodb_data/
+
+# Testing & Caching
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large Raw Datasets (Files >50MB / >100MB exceed GitHub's remote limit)
+# Benchmark download sources and instructions are documented in datasets/*/README.md
+datasets/CICIDS2017/raw/*.csv
+datasets/UNSW-NB15/raw/UNSW-NB15_[0-9].csv
